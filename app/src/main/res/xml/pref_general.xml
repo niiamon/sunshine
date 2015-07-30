@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+  <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+  <EditTextPreference
+    android:capitalize="words"
+    android:defaultValue="@string/pref_location_default"
+    android:inputType="textCapWords"
+    android:key="@string/pref_location_key"
+    android:maxLines="1"
+    android:selectAllOnFocus="true"
+    android:singleLine="true"
+    android:title="@string/pref_location_label"/>
+
+  <ListPreference
+    android:defaultValue="@string/pref_temperature_unit_default"
+    android:entries="@array/temperature_unit_entries"
+    android:entryValues="@array/temperature_unit_values"
+    android:key="@string/pref_temperature_unit_key"
+    android:selectAllOnFocus="false"
+    android:title="@string/pref_temperature_unit_label"/>
+
+</PreferenceScreen>
